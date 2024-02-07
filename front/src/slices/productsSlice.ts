@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import client from "../apolloClient";
-import { GET_PRODUCTS } from "../graphqlQueries/products";
+import { GET_PRODUCTS } from "../graphql-queries/products";
 
 interface Product {
   id: string;
@@ -13,7 +13,7 @@ interface ProductsState {
   loading: boolean;
 }
 
-const initialState: ProductsState = {
+export  const initialState: ProductsState = {
   products: [],
   loading: false,
 };
