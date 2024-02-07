@@ -2,7 +2,7 @@ version: '3'
 
 services:
   frontend:
-    build: ./shopify_client
+    build: ./front
     volumes:
       - ./front:/app
       - /app/node_modules
@@ -12,7 +12,7 @@ services:
       - backend
 
   backend:
-    build: ./shopify_server
+    build: ./back
     volumes:
       - ./back:/app
       - /app/node_modules
